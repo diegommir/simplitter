@@ -1,3 +1,5 @@
+"""This module contains all the Model classes used in this app."""
+
 from django.db import models
 from django_extensions.db.models import TimeStampedModel
 
