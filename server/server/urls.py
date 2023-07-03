@@ -17,10 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
+from core import views as core_views
 
 router = routers.DefaultRouter()
 urlpatterns = router.urls
 
 urlpatterns += [
     path('admin/', admin.site.urls),
+    path('person/', core_views.PersonAPI.as_view()),
+    path('person/<int:id>/', core_views.PersonIdAPI.as_view()),
 ]
