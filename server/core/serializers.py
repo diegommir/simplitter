@@ -7,7 +7,7 @@ class PersonSerializer(ModelSerializer):
     """Serializer class for the Person model."""
     class Meta:
         model = models.Person
-        fields = ['id', 'username', 'name', 'created', 'modified']
+        fields = ['id', 'username', 'name', 'status', 'created', 'modified']
 
 class PostSerializer(ModelSerializer):
     """Serializer class for the Post model."""
